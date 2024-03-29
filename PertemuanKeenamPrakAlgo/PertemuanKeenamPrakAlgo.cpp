@@ -52,6 +52,6 @@ void q_sort() {
 	j = high;
 
 	while (i <= j) {
-
+		 
 	}
 }
