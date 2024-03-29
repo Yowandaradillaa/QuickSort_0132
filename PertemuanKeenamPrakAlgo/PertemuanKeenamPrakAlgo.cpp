@@ -39,6 +39,6 @@ void swap (){
 
 void q_sort() {
 	int low;
-	int high;
+	int high; 
 
 }
