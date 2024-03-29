@@ -28,22 +28,19 @@ void input() {
 	}
 }
 
-void swap (){
-	int x, int y;
-
+void swap (int x, int y){
 	int temp = arr[x];
 	arr[x] = arr[y];
 	arr[y] = temp;
 	mov_count++;
 }
 
-void q_short() {
-	int low;
-	int high;
+void q_short(int low, int high) 
+{
 
 	int temp;
 	int pivot, i, j;
-	if (low > high) {
+	if ( low > high ) {
 		return;
 	}
 
@@ -66,15 +63,16 @@ void q_short() {
 		cmp_count++;
 		if (i < j)
 		{
-			swap(i, j)
+			swap(i, j);
 		}
 	}
+
 
 	if (low < j) {
 		swap(low, j);
 	}
-	(low, j - 1);
-	(j + 1, high);
+	q_short(low, j - 1);
+	q_short(j + 1, high);
 }
 
 void display() {
@@ -96,12 +94,14 @@ int main()
 
 	do {
 		input();
-		q_short(0, n - 1);
+		(0, n - 1);
 		display();
 		cout << "\n\nDo you want to continue? (y/n): ";
 		cin >> ch;
 		if (ch == 'n' || ch == 'N')
 			break;
-
-	}
+		system("pause");
+		system("cls");
+	} while (true);
+	return 0;
 }
