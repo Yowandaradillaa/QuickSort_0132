@@ -37,9 +37,9 @@ void swap (){
 	mov_count++;
 }
 
-void q_sort() {
+void q_short() {
 	int low;
-	int high; 
+	int high;
 
 	int temp;
 	int pivot, i, j;
@@ -52,6 +52,27 @@ void q_sort() {
 	j = high;
 
 	while (i <= j) {
-		 
+		while ((arr[i] <= pivot) && (i <= high))
+		{
+			i++;
+			cmp_count++;
+		}
+		cmp_count++;
+		while ((arr[j] > pivot) && (j >= low))
+		{
+			j--;
+			cmp_count++;
+		}
+		cmp_count++;
+		if (i < j)
+		{
+			swap(i, j)
+		}
 	}
+
+	if (low < j) {
+		swap(low, j);
+	}
+	(low, j - 1);
+	(j + 1, high);
 }
