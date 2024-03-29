@@ -76,3 +76,7 @@ void q_short() {
 	(low, j - 1);
 	(j + 1, high);
 }
+
+void display() {
+
+}
