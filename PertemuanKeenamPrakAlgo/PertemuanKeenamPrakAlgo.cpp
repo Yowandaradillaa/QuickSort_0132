@@ -36,3 +36,9 @@ void swap (){
 	arr[y] = temp;
 	mov_count++;
 }
+
+void q_sort() {
+	int low;
+	int high;
+
+}
